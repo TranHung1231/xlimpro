@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 .hinh1 {
     width: 50%;
     height: 500px;
@@ -33,21 +38,7 @@
     height: 100vh;
   }
   
-  .button {
-    font-size: 1em;
-    padding: 10px;
-    color: #0e0d0d;
-    border: 2px solid #06d85f;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    float: right;
-  }
   
-  .button :hover {
-    background-color: #06d85f;
-  }
   
   .overlay {
     position: fixed;
@@ -64,63 +55,13 @@
     visibility: visible;
     opacity: 1;
   }
-  
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 3s ease-in-out;
-  }
-  
-  .popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-    text-align: center;
-  }
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  .popup .close:hover {
-    color: #06d85f;
-  }
-  .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-  
-  .form {
-    border-radius: 10px;
-    background-color: burlywood;
-    padding: 20px;
-    margin-top: 20px;
-    z-index: 99;
-  }
+ 
   
   .head {
     text-align: center;
     display: block;
   }
-  
-  .popup-form input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px #9de4d2;
-  }
-  
+
   select {
     width: 100%;
     padding: 10px;
@@ -321,4 +262,29 @@
     height: 100%;
     object-fit: cover;
   }
+  .submit-button1 {
+    display: flex;
+    justify-content: center;
+  }
   
+  .login5 {
+    margin-left: 8px;
+    margin-top: 400px; /* Điều chỉnh khoảng cách từ đỉnh trang xuống dưới */
+    border: 1.5px solid;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #06d85f;
+}
+
+.login6 {
+    margin-left: 9px;
+    margin-top: 500px; /* Điều chỉnh khoảng cách từ đỉnh trang xuống dưới */
+    border: 1.5px solid;
+    border-radius: 10px;
+    font-size: 25px;;
+    color: #06d85f;
+}
+
+
+
+
