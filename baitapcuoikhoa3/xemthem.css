@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    /* Nền trắng */
+    margin: 0;
+    /* Bỏ margin mặc định */
+}
+
+.header {
+
+    /* Nền đen */
+    color: black;
+    /* Màu chữ đen */
+    padding: 20px;
+    /* Khoảng cách xung quanh */
+    position: relative;
+    /* Để định vị giỏ hàng */
+}
+
+h1 {
+    margin: 0;
+    /* Để không có khoảng cách dưới tiêu đề */
+}
+
+.cart {
+    position: fixed;
+    /* Đặt giỏ hàng cố định ở góc */
+    bottom: 20px;
+    /* Cách từ dưới lên */
+    right: 20px;
+    /* Cách từ bên phải vào */
+    border: 2px solid #fff;
+    /* Đổi màu viền thành trắng */
+    padding: 20px;
+    /* Tăng kích thước padding */
+    background: rgba(255, 255, 255, 0.9);
+    /* Nền trắng mờ */
+    z-index: 10;
+    /* Để giỏ hàng nổi bật hơn */
+    border-radius: 10px;
+    /* Bo góc cho giỏ hàng */
+    width: 300px;
+    /* Đặt chiều rộng cho giỏ hàng */
+}
+
+#cart-link {
+    display: flex;
+    /* Để căn giữa logo */
+    justify-content: center;
+    /* Căn giữa */
+    margin-bottom: 10px;
+    /* Khoảng cách dưới logo */
+}
+
+.cart-logo {
+    width: 40px;
+    /* Độ rộng của logo */
+    height: auto;
+    /* Chiều cao tự động */
+    transition: transform 0.2s;
+    /* Hiệu ứng chuyển tiếp mượt mà */
+}
+
+#cart-link:hover .cart-logo {
+    animation: shake 0.5s;
+    /* Áp dụng hiệu ứng lắc lư khi hover */
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-5px, 0);
+    }
+
+    50% {
+        transform: translate(5px, 0);
+    }
+
+    75% {
+        transform: translate(-5px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    /* Tạo khoảng cách giữa các khu vực */
+    margin-top: 250px;
+    /* Khoảng cách từ tiêu đề */
+}
+
+.comics,
+.notebooks {
+    flex: 1;
+    /* Để các khu vực có cùng kích thước */
+    margin: 0 10px;
+    /* Khoảng cách giữa các khu vực */
+}
+
+.item {
+    margin: 10px;
+    border: 1px solid #181717;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    /* Căn giữa nội dung trong mỗi item */
+}
+
+.item img {
+    width: 100%;
+    /* Để hình ảnh chiếm toàn bộ chiều rộng của item */
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    /* Tăng kích thước nút */
+    font-size: 16px;
+    /* Kích thước chữ lớn hơn */
+    border: none;
+    /* Bỏ viền */
+    border-radius: 25px;
+    /* Làm cho nút tròn */
+    background-color: #28a745;
+    /* Màu nền xanh */
+    color: black;
+    /* Màu chữ trắng */
+    cursor: pointer;
+    /* Đổi con trỏ khi di chuột */
+    transition: background-color 0.3s;
+    /* Hiệu ứng chuyển màu khi hover */
+}
+
+button:hover {
+    background-color: #218838;
+    /* Đổi màu khi hover */
+}
+
+#cart-items {
+    color: black;
+    /* Đặt màu chữ là đen */
+    display: block;
+    /* Để hiển thị */
+}
